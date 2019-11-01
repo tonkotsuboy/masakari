@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #151f2c;
+  position: relative;
+}
+
+main {
+  overflow: hidden;
+}
+.canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  //pointer-events: none;
+}
+
+.face,
+.hand,
+.effect {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+$faceWidth: 200;
+$faceHeight: 75;
+
+.face {
+  position: absolute;
+  width: #{$faceWidth}px;
+  height: #{$faceHeight}px;
+  left: calc(50% - #{$faceWidth/2}px);
+  top: calc(50% - #{$faceHeight/2}px);
+}
+
+.hand {
+  $width: 50;
+  $height: 75;
+  position: absolute;
+  width: #{$width}px;
+  height: #{$height}px;
+  left: calc(50% - #{$width/2}px + #{$faceWidth * 0.45}px);
+  top: calc(50% - #{$height/2}px);
+  border-top-color: #ffffff;
+  transform-origin: 0 center;
+}
+//.axe {
+//  $width: 46;
+//  $height: $width;
+//
+//  top: -41px;
+//  left: -19px;
+//  position: absolute;
+//}
+
+.axe {
+  $width: 46;
+  $height: $width;
+  position: absolute;
+  width: #{$width}px;
+  height: #{$height}px;
+  left: calc(50% - #{$width/2}px + #{$faceWidth * 0.35}px);
+  top: calc(50% - #{$height/2}px - #{$faceHeight * 0.55}px);
+}
+
+.effect  {
+  font-size: 40px;
+  $width: 207;
+  $height: 75;
+  position: absolute;
+  width: #{$width}px;
+  height: #{$height}px;
+  left: calc(50% - #{$width/2}px + #{$faceWidth * 1.2}px);
+  top: calc(50% - #{$height/2}px);
+  opacity: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "masakari",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tonkotsuboy/masakari.git",
+  "author": "ics-kano <takeshi.kano@ics-web.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/gsap": "^1.20.2"
+  }
+}
